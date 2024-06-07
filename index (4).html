@@ -1930,8 +1930,8 @@ September 2022
 document.addEventListener('DOMContentLoaded', function() {
     
   
-    const apiurl = `http://hdfcbackend1-dev.eba-gn8g2pzy.us-east-1.elasticbeanstalk.com/api/ImageUpload/GetImage?formId=${formId}&merchantId=${merchantId}`;
-
+    // const apiurl = `http://hdfcbackend1-dev.eba-gn8g2pzy.us-east-1.elasticbeanstalk.com/api/ImageUpload/GetImage?formId=${formId}&merchantId=${merchantId}`;
+       const apiurl=`https://localhost:7097/api/ImageUpload/GetImage?formId=${formId}&merchantId=${merchantId}`
     fetch(apiurl)
       .then(response => {
         if (!response.ok) {
@@ -1960,7 +1960,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.addEventListener('DOMContentLoaded', function() {
        
-        const apiUrl = `http://hdfcbackend1-dev.eba-gn8g2pzy.us-east-1.elasticbeanstalk.com/api/GetFormDataByFormIdAndMerchantId?formId=${formId}&merchantId=${merchantId}`;
+        // const apiUrl = `http://hdfcbackend1-dev.eba-gn8g2pzy.us-east-1.elasticbeanstalk.com/api/GetFormDataByFormIdAndMerchantId?formId=${formId}&merchantId=${merchantId}`;
+        const apiUrl=`https://localhost:7097/api/GetFormDataByFormIdAndMerchantId?formId=${formId}&merchantId=${merchantId}`
         fetch(apiUrl)
           .then(response => {
             if (!response.ok) {
